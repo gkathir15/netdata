@@ -9,7 +9,7 @@ RUN cd ./netdata.git && chmod +x ./docker-build.sh && sync && sleep 1 && ./docke
 
 WORKDIR /
 
-ENV NETDATA_PORT 19999
+ENV NETDATA_PORT 8090
 EXPOSE $NETDATA_PORT
 
 CMD /usr/sbin/netdata -D -s /host -p ${NETDATA_PORT}

@@ -27,7 +27,7 @@
 // You can also set the default netdata server, using the following.
 // When this variable is not set, we assume the page is hosted on your
 // netdata server already.
-// var netdataServer = "http://yourhost:19999"; // set your NetData server
+// var netdataServer = "http://yourhost:8090"; // set your NetData server
 
 //(function(window, document, undefined) {
 

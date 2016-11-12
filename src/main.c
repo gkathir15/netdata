@@ -203,7 +203,7 @@ struct option_def options[] = {
     {'P', "File to save a pid while running",                                "FILE",                                 NULL},
     {'i', "The IP address to listen to.",                                    "address",                              "All addresses"},
     {'k', "Check daemon configuration.",                                     NULL,                                   NULL},
-    {'p', "Port to listen. Can be from 1 to 65535.",                         "port_number",                          "19999"},
+    {'p', "Port to listen. Can be from 1 to 65535.",                         "port_number",                          "8090"},
     {'s', "Path to access host /proc and /sys when running in a container.", "PATH",                                 NULL},
     {'t', "The frequency in seconds, for data collection. \
 Same as 'update every' config file option.",                                 "seconds",                              "1"},

@@ -622,7 +622,7 @@ defdebug=0
 NETDATA_DEBUG="$( config_option "debug flags" ${defdebug} )"
 
 # port
-defport=19999
+defport=8090
 NETDATA_PORT="$( config_option "default port" ${defport} )"
 NETDATA_PORT2="$( config_option "port" ${defport} )"
 

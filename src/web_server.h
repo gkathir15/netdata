@@ -6,7 +6,7 @@
 #define WEB_PATH_DATASOURCE         "datasource"
 #define WEB_PATH_GRAPH              "graph"
 
-#define LISTEN_PORT 19999
+#define LISTEN_PORT 8090
 #define LISTEN_BACKLOG 100
 
 #ifndef MAX_LISTEN_FDS

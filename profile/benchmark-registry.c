@@ -182,39 +182,39 @@ int main(int argc, char **argv) {
 	int i = 2;
 
 	fprintf(stderr, "\n\nADDING ENTRY\n");
-	p1 = registry_request_access("2c95abd0-1542-11e6-8c66-00508db7e9c9", "7c173980-145c-11e6-b86f-00508db7e9c1", "http://localhost:19999/", "test", time(NULL));
+	p1 = registry_request_access("2c95abd0-1542-11e6-8c66-00508db7e9c9", "7c173980-145c-11e6-b86f-00508db7e9c1", "http://localhost:8090/", "test", time(NULL));
 
 	if(0)
 	while(i--) {
 #ifdef REGISTRY_STDOUT_DUMP
 		fprintf(stderr, "\n\nADDING ENTRY\n");
 #endif /* REGISTRY_STDOUT_DUMP */
-		p1 = registry_request_access(NULL, "7c173980-145c-11e6-b86f-00508db7e9c1", "http://localhost:19999/", "test", time(NULL));
+		p1 = registry_request_access(NULL, "7c173980-145c-11e6-b86f-00508db7e9c1", "http://localhost:8090/", "test", time(NULL));
 
 #ifdef REGISTRY_STDOUT_DUMP
 		fprintf(stderr, "\n\nADDING ANOTHER URL\n");
 #endif /* REGISTRY_STDOUT_DUMP */
-		p1 = registry_request_access(p1->guid, "7c173980-145c-11e6-b86f-00508db7e9c1", "http://127.0.0.1:19999/", "test", time(NULL));
+		p1 = registry_request_access(p1->guid, "7c173980-145c-11e6-b86f-00508db7e9c1", "http://127.0.0.1:8090/", "test", time(NULL));
 
 #ifdef REGISTRY_STDOUT_DUMP
 		fprintf(stderr, "\n\nADDING ANOTHER URL\n");
 #endif /* REGISTRY_STDOUT_DUMP */
-		p1 = registry_request_access(p1->guid, "7c173980-145c-11e6-b86f-00508db7e9c1", "http://my.server:19999/", "test", time(NULL));
+		p1 = registry_request_access(p1->guid, "7c173980-145c-11e6-b86f-00508db7e9c1", "http://my.server:8090/", "test", time(NULL));
 
 #ifdef REGISTRY_STDOUT_DUMP
 		fprintf(stderr, "\n\nADDING ANOTHER MACHINE\n");
 #endif /* REGISTRY_STDOUT_DUMP */
-		p1 = registry_request_access(p1->guid, "7c173980-145c-11e6-b86f-00508db7e9c1", "http://my.server:19999/", "test", time(NULL));
+		p1 = registry_request_access(p1->guid, "7c173980-145c-11e6-b86f-00508db7e9c1", "http://my.server:8090/", "test", time(NULL));
 
 #ifdef REGISTRY_STDOUT_DUMP
 		fprintf(stderr, "\n\nADDING ANOTHER PERSON\n");
 #endif /* REGISTRY_STDOUT_DUMP */
-		p2 = registry_request_access(NULL, "7c173980-145c-11e6-b86f-00508db7e9c3", "http://localhost:19999/", "test", time(NULL));
+		p2 = registry_request_access(NULL, "7c173980-145c-11e6-b86f-00508db7e9c3", "http://localhost:8090/", "test", time(NULL));
 
 #ifdef REGISTRY_STDOUT_DUMP
 		fprintf(stderr, "\n\nADDING ANOTHER MACHINE\n");
 #endif /* REGISTRY_STDOUT_DUMP */
-		p2 = registry_request_access(p2->guid, "7c173980-145c-11e6-b86f-00508db7e9c3", "http://localhost:19999/", "test", time(NULL));
+		p2 = registry_request_access(p2->guid, "7c173980-145c-11e6-b86f-00508db7e9c3", "http://localhost:8090/", "test", time(NULL));
 	}
 
 	fprintf(stderr, "\n\nSAVE\n");

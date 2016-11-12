@@ -5,7 +5,7 @@ if [ ! -z "$1" ]
 	then
 	host="$1"
 else
-	host="http://127.0.0.1:19999"
+	host="http://127.0.0.1:8090"
 fi
 echo "using netdata server at: $host"
 

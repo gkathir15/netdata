@@ -6,7 +6,7 @@
 : ${NETDATA_OWNER:=netdata:netdata}
 
 # The URL to download netdata config.
-: ${NETDATA_CONFIG_URL:=http://localhost:19999/netdata.conf}
+: ${NETDATA_CONFIG_URL:=http://localhost:8090/netdata.conf}
 
 # The timeout in seconds to wait for netdata
 # to save its database on disk and exit.
